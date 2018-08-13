@@ -12,5 +12,18 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'Home';
 });
+
+Route::get('/usuario', function () {
+    return 'Usuario';
+});
+
+Route::get('/contactame', function () {
+    return 'Contactame';
+});
+
+Route::get('/usuario/{id}', function ($id) {
+    return "Mostrando detalle del usuario: {$id}";
+});
+
