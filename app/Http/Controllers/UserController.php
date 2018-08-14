@@ -1,20 +1,22 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function index() {
+    public function index()
+    {
         return 'Usuarios';
     }
 
-    public function show($id) {
+    public function show($id)
+    {
         return "Mostrando detalle del usuario: {$id}";
     }
 
-    public function create() {
+    public function create()
+    {
         return "Crar nuevo usuario";
     }
 

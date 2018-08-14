@@ -1,22 +1,24 @@
 <?php
-
+/**
+ * Nuevo
+*/
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class WelcomeController extends Controller
-{
+class WelcomeController extends {
 
- public function index($name, $nickname){
+ public function index($name, $nickname)
+    {
+        $name= ucfirst($name);
 
-    $name= ucfirst($name);
-
-    if ($nickname) {
+        if ($nickname)
+        {
 
         return "Bienvenido {$name}, tu apodo es {$nickname}";
 
-    } else {
-
+        }   else
+        {
         return "Bienvenido {$name}";
         }
     }
