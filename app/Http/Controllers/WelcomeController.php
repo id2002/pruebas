@@ -1,14 +1,19 @@
 <?php
 /**
  * Nuevo
-*/
+ */
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+/**
+ * Controlador de bienvenida
+ */
 
-class WelcomeController extends {
 
- public function index($name, $nickname)
+class WelcomeController extends Controller
+{
+
+    public function index($name, $nickname)
     {
         $name= ucfirst($name);
 
