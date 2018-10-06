@@ -7,7 +7,7 @@ class UserController extends Controller
 {
     public function index()
     {
-        return 'Usuarios';
+        return view('user') ;
     }
 
     public function show($id)

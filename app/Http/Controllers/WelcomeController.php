@@ -6,9 +6,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Database\Console\Migrations\RollbackCommand;
 /**
  * Controlador de bienvenida PHP 7.2
- * @link @autor
+ * @link
  */
 
 
